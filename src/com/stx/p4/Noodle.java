@@ -5,6 +5,10 @@ public class Noodle {
     private int weight;
     private boolean isHaveSoup;
 
+    public Noodle() {
+
+    }
+
     public Noodle(String type, int weight, boolean isHaveSoup) {
         this.type = type;
         this.weight = weight;
