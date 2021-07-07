@@ -1,7 +1,8 @@
 package com.stx.p4;
+
 //java 豆类
 public class Noodle {
-    private String  type;
+    private String type;
     private int weight;
     private boolean isHaveSoup;
 
