@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Demo01 {
     public static void main(String[] args) {
+        System.out.println("请输入2个数:");
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int M = sc.nextInt();
