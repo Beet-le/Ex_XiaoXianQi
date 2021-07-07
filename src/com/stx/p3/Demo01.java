@@ -1,7 +1,7 @@
 package com.stx.p3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 
 public class Demo01 {
     public static void main(String[] args) {
@@ -16,7 +16,9 @@ public class Demo01 {
               Even.add(Array[i]);
           }
         }
-        System.out.println(Odd);
-        System.out.println(Even);
+        Collections.sort(Odd);
+        Collections.sort(Even);
+        System.out.println("奇数小到大: "+Odd);
+        System.out.println("偶数小到大: "+Even);
     }
 }
