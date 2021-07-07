@@ -5,28 +5,28 @@ import java.util.Scanner;
 public class Demo01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        int N = sc.nextInt();
+        int M = sc.nextInt();
         char one = 'A';
-        char[][] Array = new char[n][m];
+        char[][] Array = new char[N][M];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < N; i++) {
             Array[i][0] = (char) (one + i);
         }
 
-        for (int j = 0; j < m; j++) {
+        for (int j = 0; j < M; j++) {
             Array[0][j] = (char) (one + j);
         }
 
-        for (int x = 1; x < n; x++) {
-            for (int y = 1; y < m; y++) {
+        for (int x = 1; x < N; x++) {
+            for (int y = 1; y < M; y++) {
                 Array[x][y] = Array[x - 1][y - 1];
             }
         }
 
-        for (int a = 0; a < n; a++) {
-            for (int b = 0; b < m; b++) {
-                System.out.print(Array[a][b]);
+        for (int y = 0; y < N; y++) {
+            for (int z = 0; z < M; z++) {
+                System.out.print(Array[y][z]);
             }
             System.out.println();
         }
