@@ -3,7 +3,7 @@ package com.stx.p1;
 public class Demo01 {
     public static void main(String[] args) {
         double Papper = 0.1;
-        double ZhuMulangMA = 8848.86;
+        double ZhuMulangMA = 8848.86*1000;
         int N = 0;
         while (Papper <= ZhuMulangMA) {
             Papper *= 2;
